@@ -1,0 +1,111 @@
+{
+  "tasks": [
+    {
+      "task_id": "TEST-001",
+      "component": "CPU",
+      "maintenance_type": "Thermal Paste Replacement",
+      "last_service_date": "2024-01-15",
+      "next_service_date": "2025-01-15",
+      "cost": 50.0,
+      "status": "Overdue",
+      "notes": "Test task"
+    },
+    {
+      "task_id": "TEST-CPU-001",
+      "component": "CPU",
+      "maintenance_type": "Thermal Paste Replacement",
+      "last_service_date": "2024-01-15",
+      "next_service_date": "2024-07-13",
+      "cost": 50.0,
+      "status": "Overdue",
+      "notes": "Validation test task"
+    },
+    {
+      "task_id": "f6161baa",
+      "component": "CPU",
+      "maintenance_type": "Thermal Paste Replacement",
+      "last_service_date": "2024-01-15",
+      "next_service_date": "2024-07-13",
+      "cost": 50.0,
+      "status": "Overdue",
+      "notes": "Validation test"
+    },
+    {
+      "task_id": "dc8cf963",
+      "component": "SSD",
+      "maintenance_type": "Dust Cleaning",
+      "last_service_date": "2024-06-01",
+      "next_service_date": "2024-12-01",
+      "cost": 25.0,
+      "status": "Overdue",
+      "notes": ""
+    },
+    {
+      "task_id": "3068bcf6",
+      "component": "SSD",
+      "maintenance_type": "Dust Cleaning",
+      "last_service_date": "2024-06-01",
+      "next_service_date": "2024-12-01",
+      "cost": 25.0,
+      "status": "Overdue",
+      "notes": ""
+    }
+  ],
+  "history": [
+    {
+      "record_id": "6f82237b-c97a-43e4-adc8-1c398c5840a1",
+      "action": "created",
+      "task_id": "TEST-001",
+      "component": "CPU",
+      "maintenance_type": "Thermal Paste Replacement",
+      "status": "Overdue",
+      "cost": 50.0,
+      "timestamp": "2026-07-10 01:19:29"
+    },
+    {
+      "record_id": "0a8d711f-d91e-41d7-b2eb-90b7bc9520bf",
+      "action": "created",
+      "task_id": "TEST-CPU-001",
+      "component": "CPU",
+      "maintenance_type": "Thermal Paste Replacement",
+      "status": "Overdue",
+      "cost": 50.0,
+      "timestamp": "2026-07-10 01:22:08"
+    },
+    {
+      "record_id": "2862fd67-0e0b-468c-aba8-50e814dd8b04",
+      "action": "created",
+      "task_id": "f6161baa",
+      "component": "CPU",
+      "maintenance_type": "Thermal Paste Replacement",
+      "status": "Overdue",
+      "cost": 50.0,
+      "timestamp": "2026-07-10 01:22:41"
+    },
+    {
+      "record_id": "63c45a43-8f0e-4214-b0c5-4cab6e9afde9",
+      "action": "created",
+      "task_id": "dc8cf963",
+      "component": "SSD",
+      "maintenance_type": "Dust Cleaning",
+      "status": "Overdue",
+      "cost": 25.0,
+      "timestamp": "2026-07-10 01:28:32"
+    },
+    {
+      "record_id": "545aae1d-2bf7-438d-9355-fc47b77efa98",
+      "action": "created",
+      "task_id": "3068bcf6",
+      "component": "SSD",
+      "maintenance_type": "Dust Cleaning",
+      "status": "Overdue",
+      "cost": 25.0,
+      "timestamp": "2026-07-10 01:28:41"
+    }
+  ],
+  "settings": {
+    "dark_mode": true,
+    "reminder_days": 7,
+    "autosave": true
+  }
+}
