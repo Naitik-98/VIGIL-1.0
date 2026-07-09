@@ -188,70 +188,86 @@ class DashboardView(tk.Frame):
         metrics_frame = tk.Frame(self, bg=DARK_PALETTE.background)
         metrics_frame.pack(fill=tk.X, padx=PADDING_LARGE, pady=PADDING_MEDIUM)
 
-        cpu_pct = self.monitor.get_cpu_percent()
-        ram_pct = self.monitor.get_ram_percent()
-        disk_pct = self.monitor.get_disk_percent()
-        disk_free = self.monitor.get_disk_free_gb()
-
-        StatCard(
+        self.cpu_card = StatCard(
             metrics_frame,
             "CPU Usage",
-            cpu_pct,
+            self.monitor.get_cpu_percent(),
             "%",
             color=DARK_PALETTE.accent,
-        ).pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=PADDING_SMALL)
+        )
+        self.cpu_card.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=PADDING_SMALL)
 
-        StatCard(
+        self.ram_card = StatCard(
             metrics_frame,
             "RAM Usage",
-            ram_pct,
+            self.monitor.get_ram_percent(),
             "%",
             color=DARK_PALETTE.accent,
-        ).pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=PADDING_SMALL)
+        )
+        self.ram_card.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=PADDING_SMALL)
 
-        StatCard(
+        self.disk_card = StatCard(
             metrics_frame,
             "Disk Usage",
-            disk_pct,
+            self.monitor.get_disk_percent(),
             "%",
             color=DARK_PALETTE.accent,
-        ).pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=PADDING_SMALL)
+        )
+        self.disk_card.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=PADDING_SMALL)
 
-        StatCard(
+        self.disk_free_card = StatCard(
             metrics_frame,
             "Disk Free",
-            disk_free,
+            self.monitor.get_disk_free_gb(),
             " GB",
             color=DARK_PALETTE.accent,
-        ).pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=PADDING_SMALL)
+        )
+        self.disk_free_card.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=PADDING_SMALL)
 
         time_frame = tk.Frame(self, bg=DARK_PALETTE.background)
         time_frame.pack(fill=tk.X, padx=PADDING_LARGE, pady=PADDING_MEDIUM)
 
-        current_time = self.monitor.get_current_time()
-        current_date = self.monitor.get_current_date()
-        uptime = self.monitor.get_uptime_string()
-
-        StatCard(
+        self.time_card = StatCard(
             time_frame,
             "Current Time",
-            current_time,
+            self.monitor.get_current_time(),
             color=DARK_PALETTE.accent,
-        ).pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=PADDING_SMALL)
+        )
+        self.time_card.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=PADDING_SMALL)
 
-        StatCard(
+        self.date_card = StatCard(
             time_frame,
             "Date",
-            current_date,
+            self.monitor.get_current_date(),
             color=DARK_PALETTE.accent,
-        ).pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=PADDING_SMALL)
+        )
+        self.date_card.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=PADDING_SMALL)
 
-        StatCard(
+        self.uptime_card = StatCard(
             time_frame,
             "System Uptime",
-            uptime,
+            self.monitor.get_uptime_string(),
             color=DARK_PALETTE.accent,
-        ).pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=PADDING_SMALL)
+        )
+        self.uptime_card.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=PADDING_SMALL)
+
+        # Start updating metrics periodically
+        self._update_metrics()
+
+    def _update_metrics(self) -> None:
+        if not self.winfo_exists():
+            return
+            
+        self.cpu_card.set_value(self.monitor.get_cpu_percent())
+        self.ram_card.set_value(self.monitor.get_ram_percent())
+        self.disk_card.set_value(self.monitor.get_disk_percent())
+        self.disk_free_card.set_value(self.monitor.get_disk_free_gb())
+        
+        self.time_card.set_value(self.monitor.get_current_time())
+        self.date_card.set_value(self.monitor.get_current_date())
+        self.uptime_card.set_value(self.monitor.get_uptime_string())
+        
+        self.after(1000, self._update_metrics)
 
     def _build_maintenance_summary(self) -> None:
         summary_frame = tk.Frame(self, bg=DARK_PALETTE.card, relief=tk.FLAT)
