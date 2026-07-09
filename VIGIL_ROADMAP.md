@@ -6,7 +6,7 @@ A modern, professional desktop application for managing and monitoring PC mainte
 
 ---
 
-## 🚀 Quick Start & Installation
+##  Quick Start & Installation
 
 ### Requirements
 - Python 3.10+
@@ -27,7 +27,7 @@ python main.py
 
 ---
 
-## 🏗️ Architecture & File Structure
+##  Architecture & File Structure
 
 VIGIL uses a clean layered architecture separating presentation (GUI), domain (business logic), and infrastructure (storage, metrics).
 
@@ -49,7 +49,7 @@ VIGIL/
 
 ---
 
-## 💾 Data Management & Privacy
+##  Data Management & Privacy
 
 - **Storage Format:** All tasks and history are stored locally in plain text JSON at data/maintenance.json.
 - **Autosave:** Automatically enabled by default. Every action instantly saves.
@@ -58,7 +58,7 @@ VIGIL/
 
 ---
 
-## 🛠️ Usage Guide
+##  Usage Guide
 
 ### Managing Maintenance Tasks
 - **Add:** Go to **Protection Center** -> **+ Add Task**. Fill in the details.
