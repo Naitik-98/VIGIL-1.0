@@ -1,6 +1,6 @@
 <div align="center">
 
-#  VIGIL 1.0
+#  VIGIL
 ### *Your PC's Silent Guardian*
 
 **A modern desktop application for PC maintenance management, live system monitoring, and data-driven analytics.**
@@ -67,7 +67,7 @@ python main.py
 ##  Project Structure
 
 ```
-VIGIL 1.0/
+VIGIL/
 ├── main.py            # Entry point
 ├── gui.py             # All UI views and components
 ├── theme.py           # Color palettes and font scheme
@@ -184,7 +184,7 @@ All data is saved to `data/maintenance.json` locally:
 
 ##  Roadmap
 
-See **[VIGIL_ROADMAP.md](VIGIL_ROADMAP.md)** for the full development checklist covering VIGIL 1.0 (MVP) through VIGIL 2.1 (Professional Edition) and the VIGIL 3.0 future vision.
+See **[VIGIL_ROADMAP.md](VIGIL_ROADMAP.md)** for the full development checklist covering VIGIL (MVP) through VIGIL 2.1 (Professional Edition) and the VIGIL 3.0 future vision.
 
 ---
 
@@ -196,7 +196,7 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 <div align="center">
 
-**VIGIL 1.0** — Built with ❤️ as a professional-grade desktop application.
+**VIGIL** — Built with ❤️ as a professional-grade desktop application.
 
 *Clean architecture · Comprehensive validation · User-centric design*
 

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""VIGIL 1.0 - Final Validation Script"""
+"""VIGIL - Final Validation Script"""
 
 from manager import ProtectionManager
 from domain import MaintenanceTask
 from datetime import date
 import os
 
-print("VIGIL 1.0 Final Validation")
+print("VIGIL Final Validation")
 print("=" * 60)
 
 try:

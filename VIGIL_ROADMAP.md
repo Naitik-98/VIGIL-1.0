@@ -1,4 +1,4 @@
-﻿# VIGIL — System Health Suite
+# VIGIL — System Health Suite
 
 **Your PC's Silent Guardian**
 
@@ -74,7 +74,7 @@ VIGIL/
 
 # VIGIL Development Roadmap
 
-## VIGIL 1.0 (Midterm Release)
+## VIGIL (Midterm Release)
 
 **Status:** MVP
 **Goal:** Meet all course requirements with a polished, professional desktop application.
