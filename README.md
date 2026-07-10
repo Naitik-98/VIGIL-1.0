@@ -13,6 +13,8 @@
 
 </div>
 
+
+Download for here(https://github.com/Naitik-98/VIGIL/releases/download/v0.0.2/main.exe)
 ---
 
 ## 📖 Overview
