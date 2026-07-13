@@ -95,7 +95,7 @@ VIGIL/
 
 ---
 
-## Phase 2 â€” Core Backend
+## Phase 2 Core Backend
 
 ### Models
 
@@ -122,7 +122,7 @@ VIGIL/
 
 ---
 
-## Phase 3 â€” CRUD System
+## Phase 3 CRUD System
 
 * [x] Add Protection Task
 * [x] View Protection Tasks
@@ -133,7 +133,7 @@ VIGIL/
 
 ---
 
-## Phase 4 â€” Dashboard
+## Phase 4 Dashboard
 
 Live Information
 
@@ -154,7 +154,7 @@ Protection Summary
 
 ---
 
-## Phase 5 â€” Analytics
+## Phase 5 Analytics
 
 Using NumPy
 
@@ -169,7 +169,7 @@ Using NumPy
 
 ---
 
-## Phase 6 â€” Reminder System
+## Phase 6 Reminder System
 
 * [x] Due Soon detection
 * [x] Overdue detection
@@ -178,7 +178,7 @@ Using NumPy
 
 ---
 
-## Phase 7 â€” GUI
+## Phase 7 GUI
 
 * [x] Sidebar Navigation
 * [x] Dashboard Page
@@ -190,7 +190,7 @@ Using NumPy
 
 ---
 
-## Phase 8 â€” Settings
+## Phase 8 Settings
 
 * [x] Dark Mode
 * [x] Autosave
@@ -199,7 +199,7 @@ Using NumPy
 
 ---
 
-## Phase 9 â€” Error Handling
+## Phase 9 Error Handling
 
 * [x] Invalid Input
 * [x] File Errors
@@ -210,7 +210,7 @@ Using NumPy
 
 ---
 
-## Phase 10 â€” Polish
+## Phase 10 Polish
 
 * [ ] Better Icons
 * [ ] Better Table Styling
